@@ -56,6 +56,16 @@ app.post('/', function(req, resp){
                 rollingSpider.land();
                 console.log('landing...');
             }
+
+            else if (key_words.indexOf('/forward') != -1){
+                rollingSpider.forward(50, 15);
+                console.log('going forwards...');
+            }
+
+            else if (key_words.indexOf('/backward') != -1){
+                rollingSpider.backward(50, 15);
+                console.log('going backwards...');
+            }
         }
     );
 });
