@@ -64,6 +64,8 @@ app.post('/', function(req, resp){
                 return
             }
 
+            rollingSpider.flatTrim();
+
             // If '/fly' then fly
             if (key_words.indexOf('/fly') != -1){
                 rollingSpider.takeOff();
@@ -78,25 +80,25 @@ app.post('/', function(req, resp){
             }
 
             else if (key_words.indexOf('/forward') != -1){
-                rollingSpider.forward({'speed': 50, 'steps': 20});
+                rollingSpider.forward({'speed': 50, 'steps': 40});
                 rollingSpider.flatTrim();
                 console.log('going forwards...');
             }
 
             else if (key_words.indexOf('/backward') != -1){
-                rollingSpider.backward({'speed':50, 'steps': 20});
+                rollingSpider.backward({'speed':50, 'steps': 40});
                 rollingSpider.flatTrim();
                 console.log('going backwards...');
             }
 
             else if (key_words.indexOf('/up') != -1){
-                rollingSpider.up({'speed': 50, 'steps': 20});
+                rollingSpider.up({'speed': 50, 'steps': 40});
                 rollingSpider.flatTrim();
                 console.log('going up...')
             }
 
             else if (key_words.indexOf('/down') != -1){
-                rollingSpider.down({'speed': 50, 'steps': 20});
+                rollingSpider.down({'speed': 50, 'steps': 40});
                 rollingSpider.flatTrim();
                 console.log('going down...')
             }
