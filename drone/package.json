@@ -1,0 +1,20 @@
+{
+  "name": "drone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "drone_setup.js",
+  "dependencies": {
+	"rolling-spider": "^1.5.2",
+	"temporal": "^0.5.0",
+    "node-flint": "^4.14.0",
+	"express": "^4.1.0",
+	"body-parser": "^1.15.2",
+	"request": "^2.75.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
